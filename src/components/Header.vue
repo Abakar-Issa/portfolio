@@ -10,7 +10,7 @@
         class="logo-avatar"
       >
         <v-img
-          src="/images/photo_issa1.jpg"
+          :src="getImage('photo_issa1.jpg')"
           alt="Issa Abakar"
           cover
         ></v-img>
@@ -55,6 +55,8 @@
 </template>
 
 <script>
+import { getImageUrl } from '@/utils/imageUtils'
+
 export default {
   name: 'Header',
   data: () => ({
@@ -67,7 +69,12 @@ export default {
       { title: 'Services', path: '/services' },
       { title: 'Contact', path: '/contact' }
     ]
-  })
+  }),
+  methods: {
+    getImage(fileName) {
+      return getImageUrl(fileName);
+    }
+  }
 }
 </script>
 

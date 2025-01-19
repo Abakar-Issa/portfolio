@@ -7,7 +7,7 @@
           class="mb-6 profile-avatar"
         >
           <v-img
-            src="/images/photo_issa1.jpg"
+            :src="getImage('photo_issa1.jpg')"
             alt="Issa Abakar"
             cover
           ></v-img>
@@ -40,14 +40,21 @@
 </template>
 
 <script>
+import { getImageUrl } from '@/utils/imageUtils'
+
 export default {
   name: 'HomeView',
   data: () => ({
     socials: [
       { icon: 'mdi-github', link: 'https://github.com/Abakar-Issa' },
       { icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/issa-abakar-564248159/' }
-    ],
+    ]
   }),
+  methods: {
+    getImage(fileName) {
+      return getImageUrl(fileName);
+    }
+  }
 }
 </script>
 
