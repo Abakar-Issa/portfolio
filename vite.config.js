@@ -5,6 +5,7 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/portfolio/',  // Ajout de la base URL pour GitHub Pages
   plugins: [
     vue(),
     vuetify({ autoImport: true }),
