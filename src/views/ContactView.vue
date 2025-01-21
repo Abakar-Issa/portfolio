@@ -17,7 +17,7 @@
                     <v-icon color="primary">mdi-phone</v-icon>
                   </template>
                   <v-list-item-title>
-                    <a href="tel:+33749457176" class="text-decoration-none">
+                    <a href="tel:+33758342537" class="text-decoration-none">
                       +33 7 58 34 25 37
                     </a>
                   </v-list-item-title>
@@ -28,7 +28,7 @@
                     <v-icon color="primary">mdi-email</v-icon>
                   </template>
                   <v-list-item-title>
-                    <a href="mailto:abakarissa93@gmail.com" class="text-decoration-none">
+                    <a href="mailto:issaabakar17@gmail.com" class="text-decoration-none">
                       issaabakar17@gmail.com
                     </a>
                   </v-list-item-title>
